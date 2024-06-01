@@ -1,0 +1,326 @@
+.app {
+  display: flex;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+  padding:61px 121px;
+  
+  
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 2s ease-in;}
+.back-button:hover{
+  cursor:pointer;
+  background-color: green;
+  color:white;
+  transition: all 2s ease-in;
+}
+
+.question {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.question-details .tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.question-stats {
+  margin-top: 10px;
+  color: gray;
+}
+
+.answers {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.answer {
+  margin-bottom: 20px;
+}
+
+.answer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.edit-button, .like-button, .post-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.toggle{
+  padding:21px 21px;
+  margin-top:28rem;
+  margin-left: 1rem;
+}
+.toggle i{
+  cursor: pointer;
+}
+.fa-note-sticky,.fa-circle-xmark{
+  background-color: peachpuff;
+  padding:10px 10px;
+  border-radius: 50%;
+  font-size: 23px;
+  color:black;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  color:white;
+  margin-top: -32rem;
+  padding:11px 11px;
+  transition: all 0.4s ease;
+  margin-left: 66rem;
+width:169px;
+
+}
+.icons_flat{
+  display: flex;
+  flex-direction: row;
+  gap:18px;
+  
+margin-top: -20rem;
+
+margin-left: 63rem;
+
+padding:11px 11px;
+
+
+
+}
+.report,.feedback,.contact,.suggestion{
+  display: flex;
+  gap:18px;
+  flex-direction: row;
+ 
+}
+.icons p{color:black;
+  white-space: nowrap;
+  background-color: peachpuff;
+  padding:2px 2px;
+  font-weight: bolder;
+}
+.p_flat{
+  display: none;
+}
+.icons i{cursor:pointer;
+  color:black;
+  background-color:  peachpuff;
+  border-radius: 50%;
+  padding:9px 9px;
+  font-size: 21px;
+  margin-top: 9px;
+}
+.span_flat{
+  cursor:pointer;
+  color:black;
+  background-color:  peachpuff;
+  border-radius: 50%;
+  padding:9px 9px;
+  font-size: 23px;
+  margin-top: 9px;
+
+}
+.modal{
+  padding:21px 21px;
+  
+  display:flex;
+  
+  justify-content: center;
+  margin-top: -30rem;
+
+margin-left: 60rem;
+}
+/* Contact Dialog box css*/
+.contact-dialog {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: antiquewhite;
+
+}
+
+.contact-dialog h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btn{
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Feedback Dialog*/
+
+.dialog{display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  padding: 16px;
+  width: 300px;
+  height: 55vh;
+  box-shadow: 0 2px 10px rgba(0 0 0 0.1);
+}
+.textareaContainer{
+  position: relative;
+  margin-bottom: 16px;
+}
+.textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.attachButton {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+};
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+};
+.submitButton{
+  padding: 8px 16px;
+  
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submitButtonDisabled {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/*Speech Bubble*/
+/*.speech_bubble{
+  width:220px;
+  background-color: yellow;
+  display: flex;
+  justify-content: end;
+  padding: 2px 2px;
+  align-items: end;
+  margin-top: -19rem;
+  margin-left: 64rem;
+}*/
+.speech_bubble p{
+  color:blue;
+  font-size: 18px;
+}
+.speech_bubble {
+  margin-top: -22rem;
+  margin-left: 66rem;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 2px 2px;
+  color:black;
+  width: 200px;
+  position:relative;
+  text-align: center;
+}
+
+.speech_bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Adjust based on your design */
+  left: 20px; /* Adjust based on your design */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #f0f0f0;
+}
+
